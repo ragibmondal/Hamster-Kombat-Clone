@@ -1,0 +1,11 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  transition: all 0.3s ease-in-out;
+}
+
+#root:hover {
+  transform: scale(1.02);
+}
