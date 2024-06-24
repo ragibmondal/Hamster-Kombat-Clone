@@ -1,4 +1,4 @@
-# Telegram Web App
+# Hamster-Kombat-Clone Telegram Web App
 
 This project is a Telegram Web App that includes features like coin mining, referrals, tasks, and statistics like hamster kombat
 
@@ -36,3 +36,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](https://github.com/ragibmondal/hamsterkombat-clone/blob/main/LICENSE)
+## Hamster-Kombat-Clone
