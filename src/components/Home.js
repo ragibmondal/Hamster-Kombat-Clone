@@ -9,7 +9,7 @@ function Home() {
 
   useEffect(() => {
     let interval;
-    if (isMining && user.energy > 0) {
+    if (user && isMining && user.energy > 0) {
       interval = setInterval(() => {
         setUser(prevUser => ({
           ...prevUser,
@@ -21,9 +21,10 @@ function Home() {
       setIsMining(false);
     }
     return () => clearInterval(interval);
-  }, [isMining, user.energy, setUser]);
+  }, [isMining, user, setUser]);
 
   const handleMining = async () => {
+    if (!user) return;
     setIsMining(!isMining);
     if (!isMining) {
       const userRef = doc(db, 'users', user.id);
@@ -33,6 +34,10 @@ function Home() {
       });
     }
   };
+
+  if (!user) {
+    return <div>Please log in to start mining.</div>;
+  }
 
   return (
     <div className="home">
