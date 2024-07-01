@@ -1,5 +1,6 @@
 # Hamster-Kombat-Clone Telegram Web App
-
+# Note
+**Sorry, this project is not complete yet and does not work.
 This project is a Telegram Web App that includes features like coin mining, referrals, tasks, and statistics like hamster kombat
 
 ## Setup
